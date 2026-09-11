@@ -38,7 +38,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set output with list of files
-        continue-on-error: true   # racecar: scan/report step, must not fail the build
         id: get-files
         run: |
           import glob, json, os
