@@ -3,11 +3,10 @@ name: Sync Fork
 
 # yamllint disable rule:truthy
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
-  schedule:
-    - cron: "1 1 */7 * *"
 
 jobs:
   Repo-Sync:
